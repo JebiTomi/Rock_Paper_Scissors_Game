@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS import -->
+    <link rel="stylesheet" href="./css/default-layout.css" />
+
+    <!-- Script import -->
+    <script defer src="./js/script.js"></script>
+
+    <title>Game &horbar; Rock Paper Scissors</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="game-stage">
+        <h1 class="main-title">"Kő - Papír - Olló" Játék</h1>
+        <div class="game-table">
+          <div class="gamer-side flex-center game-card-border">
+            <h3>Játékos</h3>
+            <img
+              id="chooseGamer"
+              class="gamer-img"
+              src="./img/blank.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="score-side flex-center game-card-border">
+            <div class="result">
+              <h3><span class="lapCounter"></span>. kör eredménye:</h3>
+              <p id="resultMessage" class="resultMessage"></p>
+            </div>
+            <div class="score-table-container">
+              <div>
+                <h4>Játékos</h4>
+                <p class="player-score"></p>
+              </div>
+              <div>
+                <h4>A.I.</h4>
+                <p class="ai-score">23</p>
+              </div>
+            </div>
+            <div>
+              <h4 class="finalResult"></h4>
+            </div>
+          </div>
+
+          <div class="ai-side flex-center game-card-border">
+            <h3>A.I.</h3>
+            <img id="chooseAI" class="ai-img" src="./img/blank.jpg" alt="" />
+          </div>
+        </div>
+        <div class="choose-container">
+          <img
+            id="chooseRock"
+            class="choose-img"
+            src="./img/rock.jpg"
+            alt="rock picture"
+          />
+          <img
+            id="choosePaper"
+            class="choose-img"
+            src="./img/paper.jpg"
+            alt="paper picture"
+          />
+
+          <img
+            id="chooseScissors"
+            class="choose-img"
+            src="./img/scissors.jpg"
+            alt="scissors picture"
+          />
+        </div>
+        <div class="button-group">
+          <button id="newGame">Új játék</button>
+          <button id="endGame">Játék vége</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
